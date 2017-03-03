@@ -316,7 +316,7 @@ static void ieee80211n_check_scan(struct hostapd_iface *iface)
 			   iface->conf->channel,
 			   iface->conf->channel +
 			   iface->conf->secondary_channel * 4);
-		iface->conf->secondary_channel = 0;
+		// iface->conf->secondary_channel = 0;
 		if (iface->drv_flags & WPA_DRIVER_FLAGS_HT_2040_COEX) {
 			/*
 			 * TODO: Could consider scheduling another scan to check
